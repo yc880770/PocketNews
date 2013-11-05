@@ -100,25 +100,7 @@ CREATE TABLE pn_role
 (
 id INTEGER AUTO_INCREMENT,
 name VARCHAR(255),
-content_select INTEGER,
-content_insert INTEGER,
-content_update INTEGER,
-content_delete INTEGER,
-content_classify_select INTEGER,
-content_classify_insert INTEGER,
-content_classify_update INTEGER,
-content_classify_delete INTEGER,
-content_verify_select INTEGER,
-content_verify_pass INTEGER,
-content_verify_back INTEGER,
-user_select INTEGER,
-user_insert INTEGER,
-user_update INTEGER,
-user_delete INTEGER,
-role_select INTEGER,
-role_insert INTEGER,
-role_update INTEGER,
-role_delete INTEGER
+role_status INTEGER,
 PRIMARY KEY (id)
 );
 
@@ -134,6 +116,7 @@ id INTEGER AUTO_INCREMENT,
 name VARCHAR(255),
 password VARCHAR(255),
 role_id INTEGER,
+role_status INTEGER,
 PRIMARY KEY (id)
 );
 

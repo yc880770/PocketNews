@@ -16,6 +16,7 @@ import java.util.Map;
  */
 public interface UserDao extends BaseDao {
     public User findById(int id) throws SQLException;
+    public User findByNameAndPassword(String name,String password) throws SQLException;
     public int insert(User user) throws  SQLException;
     public boolean update(User user) throws  SQLException;
 //    public List<Map<String,Object>> find() throws  SQLException;

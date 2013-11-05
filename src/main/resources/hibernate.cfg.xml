@@ -18,7 +18,8 @@
         <property name="c3p0.timeout">1800</property>
         <property name="c3p0.max_statements">100</property>
         <!-- orm -->
-        <!--<mapping resource="com/studentarchives/model/entity/User.hbm.xml"/>-->
+        <mapping resource="com/beyond/pocketNews/model/entity/User.hbm.xml"/>
+        <mapping resource="com/beyond/pocketNews/model/entity/Role.hbm.xml"/>
         <!--<mapping resource="com/studentarchives/model/entity/Course.hbm.xml"/>-->
 
     </session-factory>

@@ -1,5 +1,8 @@
 package com.beyond.pocketNews.model.entity;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Created with IntelliJ IDEA.
  * User: 闯儿
@@ -13,6 +16,8 @@ public class Role{
 
     private String roleName;
     private int roleId;
+    private int roleStatus;
+    private Set<User> roleUsers = new HashSet<User>();
     private int contentSelect;
     private int contentInsert;
     private int contentUpdate;
@@ -199,5 +204,21 @@ public class Role{
 
     public void setRoleDelete(int roleDelete) {
         this.roleDelete = roleDelete;
+    }
+
+    public int getRoleStatus() {
+        return roleStatus;
+    }
+
+    public void setRoleStatus(int roleStatus) {
+        this.roleStatus = roleStatus;
+    }
+
+    public Set<User> getRoleUsers() {
+        return roleUsers;
+    }
+
+    public void setRoleUsers(Set<User> roleUsers) {
+        this.roleUsers = roleUsers;
     }
 }

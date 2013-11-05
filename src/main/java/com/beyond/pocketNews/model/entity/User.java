@@ -8,8 +8,8 @@ package com.beyond.pocketNews.model.entity;
  * To change this template use File | Settings | File Templates.
  */
 public class User  {
-    public static final int USER_TYPE_SUPER_ADMIN = 1;
     private int  userId;
+    private int  userStatus;
     private String userName;
     private String userPassword;
     private int  userRoleId;
@@ -44,5 +44,13 @@ public class User  {
 
     public void setUserRoleId(int userRoleId) {
         this.userRoleId = userRoleId;
+    }
+
+    public int getUserStatus() {
+        return userStatus;
+    }
+
+    public void setUserStatus(int userStatus) {
+        this.userStatus = userStatus;
     }
 }

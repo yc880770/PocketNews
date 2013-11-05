@@ -4,8 +4,10 @@
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-    <constant name="struts.action.extension" value="action"></constant>
+    <!--<constant name="struts.action.extension" value="action"></constant>-->
     <constant name="struts.ui.theme" value="simple"></constant>
+
+    <constant name="struts.objectFactory" value="spring"></constant>
     <!--<include file="struts-users.xml"></include>-->
     <!--<include file="struts-course.xml"></include>-->
     <!--<include file="struts-college.xml"></include>-->
